@@ -3,6 +3,10 @@ var ViewModel = function() {
     this.name = ko.observable('Tabby');
     this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
     this.imgAttribution = ko.observable('https://ww.flickr.com/photos/big');
+    this.nicknames = ko.observableArray(["FirstNick", "SecondNick", "ThirdNick"]);
+
+
+
     this.title = ko.computed(function() {
         var self = this;
         var clicks = self.clickCount();
